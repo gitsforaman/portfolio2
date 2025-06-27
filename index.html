@@ -153,7 +153,7 @@
     #home {
       background: linear-gradient(135deg, #007bff 0%, #00c4b4 100%);
       color: #fff;
-      padding: 4rem 0.8rem;
+      padding: 2rem 1rem;
       position: relative;
       overflow: hidden;
       animation: fadeIn 1.2s ease-in-out;
@@ -161,10 +161,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 70vh;
+      height: 100vh;
+      min-height: 100vh;
+      width: 100%;
     }
     #home h1 {
-      font-size: clamp(1.8rem, 8vw, 2.2rem);
+      font-size: clamp(2rem, 8vw, 3rem);
       text-shadow: 0 2px 5px rgba(0,0,0,0.3);
       margin-bottom: 0.8rem;
       z-index: 1;
@@ -190,16 +192,16 @@
     @keyframes float {
       0% { transform: translateY(0) translateX(0); opacity: 0.3; }
       50% { opacity: 0.5; }
-      100% { transform: translateY(-70vh) translateX(10px); opacity: 0.3; }
+      100% { transform: translateY(-100vh) translateX(10px); opacity: 0.3; }
     }
     /* Typing Animation Styles */
     .typing-container {
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
-      font-size: clamp(1rem, 5vw, 1.2rem);
+      font-size: clamp(1.2rem, 5vw, 1.5rem);
       font-weight: 600;
-      min-width: 14rem;
+      min-width: 16rem;
       text-align: center;
       margin: 0.8rem 0;
       z-index: 1;
@@ -665,20 +667,28 @@
         width: 120px;
         height: 120px;
       }
+      #home {
+        padding: 1rem 0.8rem;
+        height: 100vh;
+        min-height: 100vh;
+      }
       #home h1 {
-        font-size: clamp(1.6rem, 7vw, 1.8rem);
+        font-size: clamp(1.6rem, 7vw, 2rem);
       }
       .typing-container {
-        font-size: clamp(0.9rem, 4.5vw, 1rem);
+        font-size: clamp(1rem, 4.5vw, 1.2rem);
         min-width: 12rem;
-      }
-      #home {
-        padding: 3rem 0.8rem;
-        min-height: 60vh;
       }
       .btn {
         padding: 0.6rem 1.2rem;
         font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+      }
+      .freelance-indicator {
+        padding: 0.3rem 0.6rem;
+        font-size: clamp(0.75rem, 3vw, 0.85rem);
+      }
+      .freelance-indicator i {
+        font-size: 1rem;
       }
       #skills, #impact, #education, #projects {
         padding: 1.5rem 0.6rem;
