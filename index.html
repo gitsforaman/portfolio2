@@ -33,6 +33,7 @@
       font-size: clamp(1.2rem, 5vw, 1.5rem);
       font-weight: bold;
       color: #007bff;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
     nav {
       display: flex;
@@ -43,17 +44,14 @@
       text-decoration: none;
       color: #212529;
       font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #007bff;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
     .hamburger {
       display: none;
       font-size: 2rem;
       color: #007bff;
       cursor: pointer;
-      transition: transform 0.3s, color 0.3s;
+      transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     }
     .hamburger.active {
       transform: rotate(180deg);
@@ -91,7 +89,7 @@
       border-radius: 0.5rem;
       text-decoration: none;
       font-weight: 600;
-      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     }
     .btn:active {
@@ -112,6 +110,7 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #007bff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .about-text {
       max-width: 500px;
@@ -128,6 +127,7 @@
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: clamp(0.9rem, 4vw, 1rem);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
     .contact-icons {
       margin-top: 1.2rem;
@@ -136,7 +136,7 @@
       margin: 0 1rem;
       font-size: 2rem;
       color: #007bff;
-      transition: color 0.3s, transform 0.2s;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
     .contact-icons a:active {
       color: #0056b3;
@@ -148,6 +148,7 @@
       font-size: clamp(0.85rem, 3.5vw, 0.95rem);
       text-align: center;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
     /* Enhanced Home Section */
     #home {
@@ -170,6 +171,7 @@
       text-shadow: 0 2px 5px rgba(0,0,0,0.3);
       margin-bottom: 0.8rem;
       z-index: 1;
+      transition: text-shadow 0.3s ease;
     }
     /* Particle Background */
     .particles {
@@ -260,10 +262,12 @@
       margin-top: 0.8rem;
       z-index: 1;
       animation: fadeInUp 0.6s ease-out, glowPulse 1.8s ease-in-out infinite;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .freelance-indicator i {
       color: #fff;
       font-size: 1.1rem;
+      transition: transform 0.3s ease;
     }
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(10px); }
@@ -283,6 +287,7 @@
       font-size: clamp(1.6rem, 6vw, 1.8rem);
       color: #212529;
       text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      transition: text-shadow 0.3s ease;
     }
     .skills {
       display: grid;
@@ -296,7 +301,7 @@
       border-radius: 0.6rem;
       padding: 1rem;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: fadeInUp 0.5s ease-out forwards;
     }
     .skill-box:nth-child(1) { animation-delay: 0.05s; }
@@ -313,6 +318,7 @@
       color: #007bff;
       margin-bottom: 0.8rem;
       display: block;
+      transition: transform 0.3s ease;
     }
     .skill-box p {
       font-size: clamp(1rem, 4vw, 1.1rem);
@@ -339,6 +345,7 @@
       font-size: 0.8rem;
       width: 0;
       animation: fillProgress 0.8s ease-out forwards;
+      transition: width 0.3s ease;
     }
     .progress-bar[data-width="90%"] { animation-delay: 0.05s; }
     .progress-bar[data-width="85%"] { animation-delay: 0.1s; }
@@ -358,6 +365,7 @@
       font-size: clamp(1.6rem, 6vw, 1.8rem);
       color: #212529;
       text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      transition: text-shadow 0.3s ease;
     }
     .impact-items {
       display: grid;
@@ -371,7 +379,7 @@
       border-radius: 0.6rem;
       padding: 1rem;
       box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
       overflow: hidden;
       animation: fadeInUp 0.5s ease-out forwards;
@@ -388,12 +396,14 @@
       color: #007bff;
       margin-bottom: 0.8rem;
       display: block;
+      transition: transform 0.3s ease;
     }
     .impact-item h3 {
       font-size: clamp(1.2rem, 4.5vw, 1.3rem);
       color: #007bff;
       margin-bottom: 0.5rem;
       font-weight: 600;
+      transition: color 0.3s ease;
     }
     .impact-item p {
       font-size: clamp(0.85rem, 3.5vw, 0.95rem);
@@ -410,7 +420,7 @@
       font-size: clamp(1.6rem, 6vw, 1.8rem);
       color: #212529;
       text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
+      transition: text-shadow 0.3s ease;
     }
     .timeline {
       max-width: 800px;
@@ -436,6 +446,7 @@
       margin: 1rem 0 1rem 2.5rem;
       position: relative;
       animation: fadeInUp 0.5s ease-out forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .education-item:nth-child(odd), .education-item:nth-child(even) {
       animation-delay: 0.05s;
@@ -451,6 +462,7 @@
       border: 2px solid #fff;
       box-shadow: 0 0 6px rgba(0,196,180,0.5);
       left: -1.8rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .education-item:active {
       transform: scale(0.97);
@@ -461,12 +473,14 @@
       color: #007bff;
       margin-bottom: 0.8rem;
       display: block;
+      transition: transform 0.3s ease;
     }
     .education-item h3 {
       font-size: clamp(1.1rem, 4vw, 1.2rem);
       color: #007bff;
       margin-bottom: 0.5rem;
       font-weight: 600;
+      transition: color 0.3s ease;
     }
     .education-item p {
       font-size: clamp(0.85rem, 3.5vw, 0.95rem);
@@ -488,7 +502,7 @@
       font-size: clamp(1.6rem, 6vw, 1.8rem);
       color: #212529;
       text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
+      transition: text-shadow 0.3s ease;
     }
     .projects-container {
       max-width: 1200px;
@@ -505,7 +519,7 @@
       break-inside: avoid;
       position: relative;
       animation: fadeInUp 0.5s ease-out forwards;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .project-card:nth-child(1) { animation-delay: 0.05s; }
     .project-card:nth-child(2) { animation-delay: 0.1s; }
@@ -520,10 +534,7 @@
       height: auto;
       border-radius: 0.4rem;
       margin-bottom: 0.6rem;
-      transition: transform 0.2s;
-    }
-    .project-card:active img {
-      transform: scale(1.02);
+      transition: transform 0.3s ease;
     }
     .project-card .image-container {
       position: relative;
@@ -539,10 +550,7 @@
       height: 100%;
       background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(0,196,180,0.2));
       opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .project-card:active .image-container::after {
-      opacity: 1;
+      transition: opacity 0.3s ease;
     }
     .project-card .category-badge {
       position: absolute;
@@ -555,12 +563,14 @@
       font-size: clamp(0.7rem, 3vw, 0.8rem);
       font-weight: 700;
       z-index: 1;
+      transition: background 0.3s ease, transform 0.3s ease;
     }
     .project-card h3 {
       font-size: clamp(1.1rem, 4vw, 1.2rem);
       color: #007bff;
       margin-bottom: 0.5rem;
       font-weight: 600;
+      transition: color 0.3s ease;
     }
     .project-card p {
       font-size: clamp(0.85rem, 3.5vw, 0.95rem);
@@ -578,10 +588,7 @@
       transform: translateY(8px);
       animation: slideIn 0.4s ease-out forwards;
       animation-delay: 0.5s;
-    }
-    .project-card:active .btn {
-      opacity: 1;
-      transform: translateY(0);
+      transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     }
     @keyframes slideIn {
       from { opacity: 0; transform: translateY(8px); }
@@ -598,7 +605,122 @@
       z-index: 0;
       opacity: 0.3;
     }
-    /* Responsive Design */
+    /* Hover Effects for Desktop */
+    @media (min-width: 769px) {
+      .logo:hover {
+        color: #00c4b4;
+        transform: scale(1.05);
+      }
+      nav a:hover {
+        color: #00c4b4;
+        transform: scale(1.1);
+      }
+      .hamburger:hover {
+        transform: scale(1.1) rotate(10deg);
+        box-shadow: 0 0 8px rgba(0,123,255,0.5);
+      }
+      #home h1:hover {
+        text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      }
+      #home .btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+        background: #e6f0ff;
+      }
+      .freelance-indicator:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 12px rgba(40,167,69,0.8);
+      }
+      .freelance-indicator:hover i {
+        transform: rotate(360deg);
+      }
+      .about-content img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0,123,255,0.5);
+      }
+      .about-content .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+        background: #e6f0ff;
+      }
+      #skills h2:hover, #impact h2:hover, #education h2:hover, #projects h2:hover {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+      .skill-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+      .skill-box:hover i {
+        transform: scale(1.2);
+      }
+      .skill-box:hover .progress-bar {
+        width: calc(var(--width) + 5%);
+      }
+      .impact-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+      .impact-item:hover i {
+        transform: scale(1.2);
+      }
+      .impact-item:hover h3 {
+        color: #00c4b4;
+      }
+      .education-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+      .education-item:hover::before {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0,196,180,0.8);
+      }
+      .education-item:hover i {
+        transform: scale(1.1);
+      }
+      .education-item:hover h3 {
+        color: #00c4b4;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+      .project-card:hover img {
+        transform: scale(1.05);
+      }
+      .project-card:hover .image-container::after {
+        opacity: 1;
+      }
+      .project-card:hover .category-badge {
+        background: #00c4b4;
+        transform: scale(1.1);
+      }
+      .project-card:hover h3 {
+        color: #00c4b4;
+      }
+      .project-card:hover .btn {
+        opacity: 1;
+        transform: translateY(0);
+        background: #e6f0ff;
+        box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+      }
+      input:hover, textarea:hover {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0,123,255,0.3);
+      }
+      .contact-icons a:hover {
+        color: #00c4b4;
+        transform: scale(1.2);
+      }
+      form .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+        background: #e6f0ff;
+      }
+      footer:hover {
+        color: #007bff;
+      }
+    }
+    /* Responsive Design for Small Screens */
     @media (max-width: 768px) {
       header {
         padding: 0.6rem 0.8rem;
@@ -615,43 +737,50 @@
         right: 0;
         height: 100vh;
         width: 100%;
-        background: linear-gradient(135deg, rgba(0,123,255,0.9), rgba(0,196,180,0.9));
-        backdrop-filter: blur(4px);
+        background: linear-gradient(135deg, rgba(0,123,255,0.95), rgba(0,196,180,0.95));
+        backdrop-filter: blur(5px);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.35s ease-in-out;
+        transition: transform 0.3s ease-in-out;
         z-index: 999;
+        padding: 1rem;
       }
       .nav-menu.active {
         transform: translateX(0);
       }
       .nav-menu a {
-        margin: 1rem 0;
-        font-size: clamp(1.6rem, 6vw, 1.8rem);
+        margin: 0.6rem 0;
+        font-size: clamp(1.4rem, 5vw, 1.6rem);
         color: #fff;
         font-weight: 600;
-        transition: color 0.2s, transform 0.2s;
+        text-decoration: none;
+        transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
         opacity: 0;
-        transform: translateY(0.8rem);
+        transform: translateY(0.6rem);
+        padding: 0.5rem 1rem;
+        width: 80%;
+        text-align: center;
+        border-radius: 0.4rem;
       }
       .nav-menu.active a {
-        animation: slideInNav 0.35s ease-out forwards;
+        animation: slideInNav 0.3s ease-out forwards;
       }
       .nav-menu a:active {
         color: #e6f0ff;
         transform: scale(0.95);
+        text-shadow: 0 0 8px rgba(255,255,255,0.5);
       }
-      .nav-menu a:nth-child(1) { animation-delay: 0.03s; }
-      .nav-menu a:nth-child(2) { animation-delay: 0.06s; }
-      .nav-menu a:nth-child(3) { animation-delay: 0.09s; }
-      .nav-menu a:nth-child(4) { animation-delay: 0.12s; }
-      .nav-menu a:nth-child(5) { animation-delay: 0.15s; }
-      .nav-menu a:nth-child(6) { animation-delay: 0.18s; }
-      .nav-menu a:nth-child(7) { animation-delay: 0.21s; }
+      .nav-menu a:nth-child(1) { animation-delay: 0.02s; }
+      .nav-menu a:nth-child(2) { animation-delay: 0.04s; }
+      .nav-menu a:nth-child(3) { animation-delay: 0.06s; }
+      .nav-menu a:nth-child(4) { animation-delay: 0.08s; }
+      .nav-menu a:nth-child(5) { animation-delay: 0.10s; }
+      .nav-menu a:nth-child(6) { animation-delay: 0.12s; }
+      .nav-menu a:nth-child(7) { animation-delay: 0.14s; }
       @keyframes slideInNav {
-        from { opacity: 0; transform: translateY(0.8rem); }
+        from { opacity: 0; transform: translateY(0.6rem); }
         to { opacity: 1; transform: translateY(0); }
       }
       .about-content {
@@ -794,6 +923,12 @@
       }
       input, textarea {
         padding: 0.7rem;
+      }
+      .nav-menu a {
+        font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+        margin: 0.5rem 0;
+        padding: 0.4rem 0.8rem;
+        width: 85%;
       }
     }
   </style>
